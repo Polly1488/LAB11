@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Language Learning — Лабораторна робота №11</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Language Learning</h1>
+
+    </header>
+
+    <section class="card-area">
+      <div class="card" id="wordCard" tabindex="0" title="Натисни або натисни Enter для перевірки">
+        <span id="wordText">—</span>
+      </div>
+
+      <div class="controls">
+        <button id="prevBtn" class="nav-btn" aria-label="Попереднє">←</button>
+        <div class="step"><span id="currentStep">0</span>/<span id="totalSteps">0</span></div>
+        <button id="nextBtn" class="nav-btn" aria-label="Наступне">→</button>
+      </div>
+
+      <div class="input-row">
+        <input id="translationInput" type="text" placeholder="Введіть переклад..." aria-label="Введіть переклад">
+        <button id="checkBtn">Перевірити</button>
+      </div>
+
+      <div class="stats">
+        <div class="stat correct">Вірно <span id="correctCount">0</span></div>
+        <div class="stat incorrect">Невірно <span id="incorrectCount">0</span></div>
+        <button id="showStatsBtn" class="small">Рівень знань</button>
+      </div>
+    </section>
+
+ 
+  <script src="script.js"></script>
+</body>
+</html>
+
